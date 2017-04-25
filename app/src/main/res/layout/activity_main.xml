@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp">
+
+
+    <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="wrap_content"
+            android:layout_height="288dp"
+            android:orientation="vertical"
+           android:layout_marginRight="18dp"
+            tools:context="com.example.abubaker.practiceapp.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:textSize="@dimen/textsize"
+        android:gravity="center_horizontal"
+        android:padding="4dp"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:id="@+id/showText"
+            android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:text="+3 Points"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:onClick="forThreePointA"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:text="+2 Points"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:onClick="forTwoPointA"
+        android:background="@color/colorPrimary"
+        />
+
+
+
+    <Button
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:text="Free Throw"
+        android:textAllCaps="false"
+        android:layout_margin="8dp"
+        android:id="@+id/button"
+        android:onClick="forThrowPointA"
+        android:background="@color/colorPrimary"/>
+
+  </LinearLayout>
+
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorofLine"
+        >
+
+    </View>
+
+    <LinearLayout
+                android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_marginLeft="9dp"
+               tools:context="com.example.abubaker.practiceapp.MainActivity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Team B"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:textSize="@dimen/textsize"
+                    />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:id="@+id/showText1"
+            android:textSize="30dp"/>
+
+
+
+
+
+                <Button
+                    android:layout_width="@dimen/buttonW"
+                    android:layout_height="@dimen/buttonH"
+                    android:text="+3 Points"
+                    android:textAllCaps="false"
+                    android:layout_margin="8dp"
+                    android:onClick="forThreePointB"
+                    android:background="@color/colorPrimary"/>
+
+
+            <Button
+                android:layout_width="@dimen/buttonW"
+                android:layout_height="@dimen/buttonH"
+                android:text="+2 Points"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"
+                android:onClick="forTwoPointB"
+                android:background="@color/colorPrimary"/>
+
+
+
+            <Button
+                android:layout_width="@dimen/buttonW"
+                android:layout_height="@dimen/buttonH"
+                android:text="Free Throw"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"
+                android:id="@+id/button1"
+                android:onClick="forFreePointB"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/buttonW"
+        android:layout_height="@dimen/buttonH"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="Reset"
+        android:background="@color/colorPrimary"
+        android:onClick="onReset"/>
+
+</RelativeLayout>
